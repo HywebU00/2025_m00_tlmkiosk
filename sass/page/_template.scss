@@ -1,0 +1,165 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  min-height: 100%;
+  overflow-x: hidden; /* 禁止左右捲動 */
+  &.fullscreen-page {
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden; /* 禁止滾動 */
+    footer {
+      position: absolute;
+      bottom: 0;
+      right: 0;
+      left: 0;
+    }
+  }
+  &.scroll-page {
+    width: 100vw;
+    min-height: 100vh;
+    overflow-y: auto; /* 可上下捲動 */
+
+    .header {
+      display: none;
+    }
+  }
+}
+
+// 最外圍預設為100%
+.wrapper {
+  width: 100vw;
+  min-height: 100%;
+  margin: 0px auto;
+  background-color: #f6f6f6;
+  background-image: url('../images/bodyb.jpg');
+  background-repeat: no-repeat;
+  background-position: center top;
+  outline: 1px solid red;
+  @include screen('mobile') {
+    padding-top: 60px;
+    background: #fff;
+    overflow: hidden;
+    overflow-y: auto;
+  }
+  &.mpwrapper {
+    background-color: #fafafa;
+    background-image: url('../images/welcome_leftbg.jpg');
+    background-repeat: no-repeat;
+    background-position: left top;
+    background-size: 50% auto;
+    .header {
+      padding-top: calc((64 / 1080) * 100vh);
+    }
+
+    h1 {
+      width: calc((276 / 1720) * 100vw);
+      height: calc((74 / 1080) * 100vh);
+      img {
+        width: calc((276 / 1720) * 100vw);
+        height: calc((74 / 1080) * 100vh);
+      }
+    }
+    footer {
+      background-color: transparent;
+      padding: 2.7vh 0;
+      p {
+        color: $secondaryColor;
+        text-align: left;
+      }
+    }
+  }
+}
+
+// 整體共用container樣式，請注意首頁切版頁面的整齊
+.container {
+  padding: 0;
+  margin: 0 auto;
+  max-width: calc(100% - 200px); //請看_variable.scss
+  @include gutter();
+  // outline: 1px solid red;
+}
+
+.main {
+  position: relative;
+  margin: 0 auto;
+  padding-top: calc((137 / 1080) * 100vh);
+
+  // 可先設定一個中央區塊最大寬，限制accesskey對齊
+  h2 {
+    line-height: 1.25em;
+  }
+}
+
+////////////////////////////////////////////////////////////
+// 為了與首頁區隔，請在內頁加上innerpage ClassName
+.innerpage {
+  padding-top: calc((174 / 1080) * 100vh);
+  > .container {
+    @include gutter(); //gutter 代表左右要留白
+    display: flex;
+    align-items: flex-start;
+  }
+
+  .center_block {
+    flex: none;
+    flex-basis: 100%;
+    max-width: 100%;
+  }
+
+  .left_block {
+    flex: none;
+    flex-basis: 260px;
+    max-width: 260px;
+    margin-right: 40px;
+
+    &.stickySidebar {
+      position: sticky;
+      top: 50px;
+    }
+
+    &.hidden {
+      + .center_block {
+        flex: none;
+        flex-basis: 100%;
+        max-width: 100%;
+      }
+    }
+
+    + .center_block {
+      flex: auto;
+      flex-basis: calc(100% - 300px);
+      max-width: calc(100% - 300px);
+    }
+
+    @include screen('tablet') {
+      display: none;
+
+      + .center_block {
+        flex: none;
+        flex-basis: 100%;
+        max-width: 100%;
+      }
+    }
+  }
+
+  &.small_size {
+    font-size: 0.938em;
+  }
+
+  &.large_size {
+    font-size: 1.125em;
+  }
+}
+
+.hidden {
+  display: none;
+}
