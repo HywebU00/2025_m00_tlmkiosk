@@ -317,12 +317,12 @@ a.more {
       text-align: center;
     }
     .represent {
-      font-size: clamp(22px, (24 / 1080) * 100vh, 24px);
+      font-size: clamp(21px, (23 / 1080) * 100vh, 23px);
       line-height: calc((34 / 1080) * 100vh);
       color: $secondaryColor;
       border-top: 1px solid $secondaryColor;
-      padding-top: 1.38vh;
-      padding-bottom: 0;
+      padding-top: 1.2vh;
+      padding-bottom: 0.46vh;
       padding-left: 2.32vw;
       text-align: left;
       background-image: url('../images/icon_rwork.png');
