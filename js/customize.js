@@ -83,34 +83,20 @@ $(function () {
       infinite: false,
       speed: 1000,
       slidesToShow: 4,
-      slidesToScroll: 1,
-      swipeToSlide: true, // 手指/滑鼠拖曳時，不需要卡在每個 slide
-      swipe: true,
+      slidesToScroll: 3,
+      // swipeToSlide: true, // 手指/滑鼠拖曳時，不需要卡在每個 slide
       draggable: true,
       responsive: [
         {
           breakpoint: 1024,
           settings: {
             slidesToShow: 3,
-            slidesToScroll: 3,
+            slidesToScroll: 2,
             infinite: true,
             dots: true,
           },
         },
-        {
-          breakpoint: 600,
-          settings: {
-            slidesToShow: 2,
-            slidesToScroll: 2,
-          },
-        },
-        {
-          breakpoint: 480,
-          settings: {
-            slidesToShow: 1,
-            slidesToScroll: 1,
-          },
-        },
+
         // You can unslick at a given breakpoint now by adding:
         // settings: "unslick"
         // instead of a settings object
@@ -124,34 +110,18 @@ $(function () {
       infinite: false,
       speed: 1000,
       slidesToShow: 4,
-      slidesToScroll: 1,
-      swipeToSlide: true, // 手指/滑鼠拖曳時，不需要卡在每個 slide
-      swipe: true,
+      slidesToScroll: 3,
+      // swipeToSlide: true, // 手指/滑鼠拖曳時，不需要卡在每個 slide
       draggable: true,
       responsive: [
         {
           breakpoint: 1024,
           settings: {
             slidesToShow: 3,
-            slidesToScroll: 3,
-            infinite: true,
-            dots: true,
-          },
-        },
-        {
-          breakpoint: 600,
-          settings: {
-            slidesToShow: 2,
             slidesToScroll: 2,
           },
         },
-        {
-          breakpoint: 480,
-          settings: {
-            slidesToShow: 1,
-            slidesToScroll: 1,
-          },
-        },
+
         // You can unslick at a given breakpoint now by adding:
         // settings: "unslick"
         // instead of a settings object
@@ -259,54 +229,54 @@ $(function () {
   //   }
   // });
   // 快速連結
-  $('.introduction_btn>a').on('click', function (e) {
-    e.preventDefault(); // 避免連結預設行為
-    $('html, body')
-      .stop(true, true)
-      .animate(
-        {
-          scrollTop: $('.material_group').offset().top - 160,
-        },
-        200,
-        'easeOutExpo'
-      );
-  });
-  $('.autobiography_btn>a').on('click', function (e) {
-    e.preventDefault(); // 避免連結預設行為
-    $('html, body')
-      .stop(true, true)
-      .animate(
-        {
-          scrollTop: $('.autobiography_block').offset().top - 170,
-        },
-        200,
-        'easeOutExpo'
-      );
-  });
-  $('.chronology_btn>a').on('click', function (e) {
-    e.preventDefault(); // 避免連結預設行為
-    $('html, body')
-      .stop(true, true)
-      .animate(
-        {
-          scrollTop: $('.chronology_block').offset().top - 170,
-        },
-        200,
-        'easeOutExpo'
-      );
-  });
-  $('.work_btn>a').on('click', function (e) {
-    e.preventDefault(); // 避免連結預設行為
-    $('html, body')
-      .stop(true, true)
-      .animate(
-        {
-          scrollTop: $('.work_block').offset().top - 170,
-        },
-        200,
-        'easeOutExpo'
-      );
-  });
+  // $('.introduction_btn>a').on('click', function (e) {
+  //   e.preventDefault(); // 避免連結預設行為
+  //   $('html, body')
+  //     .stop(true, true)
+  //     .animate(
+  //       {
+  //         scrollTop: $('.material_group').offset().top - 160,
+  //       },
+  //       200,
+  //       'easeOutExpo'
+  //     );
+  // });
+  // $('.autobiography_btn>a').on('click', function (e) {
+  //   e.preventDefault(); // 避免連結預設行為
+  //   $('html, body')
+  //     .stop(true, true)
+  //     .animate(
+  //       {
+  //         scrollTop: $('.autobiography_block').offset().top - 170,
+  //       },
+  //       200,
+  //       'easeOutExpo'
+  //     );
+  // });
+  // $('.chronology_btn>a').on('click', function (e) {
+  //   e.preventDefault(); // 避免連結預設行為
+  //   $('html, body')
+  //     .stop(true, true)
+  //     .animate(
+  //       {
+  //         scrollTop: $('.chronology_block').offset().top - 170,
+  //       },
+  //       200,
+  //       'easeOutExpo'
+  //     );
+  // });
+  // $('.work_btn>a').on('click', function (e) {
+  //   e.preventDefault(); // 避免連結預設行為
+  //   $('html, body')
+  //     .stop(true, true)
+  //     .animate(
+  //       {
+  //         scrollTop: $('.work_block').offset().top - 170,
+  //       },
+  //       200,
+  //       'easeOutExpo'
+  //     );
+  // });
   //
   $('.quicklinks_block ul li > a').on('click', function (e) {
     e.preventDefault(); // 避免 a 連結跳動
@@ -327,4 +297,64 @@ $(function () {
       },
     },
   });
+});
+// 快捷鍵
+$(function () {
+  const offsetTop = 170; // 固定高度偏移
+  const sectionMap = {
+    introduction_btn: '.material_group',
+    autobiography_btn: '.autobiography_block',
+    chronology_btn: '.chronology_block',
+    work_btn: '.work_block',
+  };
+
+  // ScrollSpy 功能
+  function updateActive() {
+    let scrollPos = $(window).scrollTop();
+    let windowHeight = $(window).height();
+    let docHeight = $(document).height();
+    let activeClass = null;
+
+    $.each(sectionMap, function (btnClass, sectionSelector) {
+      let section = $(sectionSelector);
+      if (section.length) {
+        let top = section.offset().top - offsetTop; // 偏移量
+        let bottom = top + section.outerHeight();
+
+        if (scrollPos >= top && scrollPos < bottom) {
+          activeClass = btnClass;
+        }
+      }
+    });
+
+    // 如果滑到最底部，確保最後一個快捷鍵 active
+    if ($(window).scrollTop() + windowHeight >= docHeight) {
+      let lastBtnClass = Object.keys(sectionMap)[Object.keys(sectionMap).length - 1];
+      activeClass = lastBtnClass;
+    }
+
+    if (activeClass) {
+      $('.quicklinks_block li').removeClass('active');
+      $('.quicklinks_block li.' + activeClass).addClass('active');
+    }
+  }
+
+  $(window).on('scroll', updateActive);
+
+  // 點選快捷鍵滾動
+  $('.quicklinks_block li a').on('click', function (e) {
+    e.preventDefault();
+    let li = $(this).parent();
+    let btnClass = li.attr('class').split(' ')[0]; // 取 li 第一個 class
+    let target = $(sectionMap[btnClass]);
+
+    if (target.length) {
+      $('html, body').animate({ scrollTop: target.offset().top - offsetTop }, 600, 'easeOutExpo', function () {
+        updateActive(); // 滾動完成後也更新 active
+      });
+    }
+  });
+
+  // 初始化一次 active
+  updateActive();
 });
