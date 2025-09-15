@@ -140,7 +140,17 @@ $(function () {
       draggable: true,
     });
   }
-
+  // cp頁面照片輪播
+  if ($('.picslider2').length > 0) {
+    $('.picslider2').slick({
+      dots: true,
+      infinite: false,
+      speed: 500,
+      cssEase: 'linear',
+      swipe: true,
+      draggable: true,
+    });
+  }
   // 寫作年表輪播
   if ($('.chronology_slider').length > 0) {
     $('.chronology_slider').slick({
@@ -300,7 +310,7 @@ $(function () {
 });
 // 快捷鍵
 $(function () {
-  const offsetTop = 170; // 固定高度偏移
+  const offsetTop = 180; // 固定高度偏移
   const sectionMap = {
     introduction_btn: '.material_group',
     autobiography_btn: '.autobiography_block',

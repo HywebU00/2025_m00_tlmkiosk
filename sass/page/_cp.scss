@@ -12,7 +12,7 @@ h2.title {
   left: 0;
   top: 0;
   z-index: 99;
-  height: 13.88vh;
+  height: 170px;
   display: flex;
   align-items: center;
   padding-right: 100px;
@@ -24,11 +24,12 @@ h2.title {
   }
   .titlename {
     flex: 1 1 auto;
-    font-size: clamp(60px, (70 / 1080) * 100vh, 70px);
+    font-size: clamp(58px, (63 / 1080) * 100vh, 63px);
     font-weight: 900;
     color: $primaryColor;
     border-left: 4px solid $primaryColor;
     padding-left: calc((60 / 1720) * 100vw);
+    margin: 20px 0;
   }
   .backlist {
     flex: 0 0 auto;
@@ -83,6 +84,89 @@ h2.title {
       margin-bottom: 0.5em;
     }
   }
+  //
+  .picslider_block2 {
+    width: calc((600 / 1720) * 100vw);
+    margin: 0px 3.48vw 5.55vh 0;
+    float: left;
+    .picslider2 {
+      background: #f1f1f1;
+      overflow: visible;
+      padding: 0;
+
+      .image {
+        position: relative;
+        @include aspect-ratio(4, 3);
+
+        img {
+          object-fit: contain;
+        }
+      }
+
+      // 箭頭
+      .slick-prev,
+      .slick-next {
+        width: clamp(60px, 4.65vw, 80px) !important;
+        height: clamp(60px, 4.65vw, 80px) !important;
+      }
+      .slick-prev {
+        left: -20px;
+        background: url('../images/slick/icon_arrow_left_inverse.png') center center no-repeat rgba(255, 255, 255, 0.8);
+        background-size: 30px;
+        &:hover {
+          background: url('../images/slick/icon_arrow_left_inverse.png') center center no-repeat rgba(255, 255, 255, 1);
+          background-size: 30px;
+        }
+      }
+      .slick-next {
+        right: -20px;
+        background: url('../images/slick/icon_arrow_right_inverse.png') center center no-repeat rgba(255, 255, 255, 0.8);
+        background-size: 30px;
+        &:hover {
+          background: url('../images/slick/icon_arrow_right_inverse.png') center center no-repeat rgba(255, 255, 255, 1);
+          background-size: 30px;
+        }
+      }
+      //  點點
+      .slick-dots {
+        bottom: -7.4vh;
+        li {
+          margin: 0 5px;
+          button {
+            font-size: clamp(12px, (14 / 1080) * 100vh, 14px);
+            color: #fff;
+            width: 24px;
+            height: 24px;
+            &:hover {
+              background: $linkColor;
+            }
+          }
+          &.slick-active {
+            button {
+              background: $primaryColor;
+              &:hover {
+                background: $linkColor;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  table {
+    width: 50vw;
+    overflow: hidden;
+
+    @media (max-width: 1720px) {
+      width: 48.1vw;
+    }
+    @media (max-width: 1480px) {
+      width: 45.1vw;
+    }
+  }
+
+  //
   .material_group {
     display: flex;
     .picslider_block {
@@ -154,14 +238,6 @@ h2.title {
         }
       }
     }
-
-    .material_Tb {
-      flex: 1 1 auto;
-      table {
-        width: 100%;
-      }
-    }
-    .material_Tb,
     .material_content {
       flex: 1 1 auto;
       table {
@@ -169,6 +245,7 @@ h2.title {
       }
     }
   }
+
   .sectiontitle {
     font-size: clamp(32px, (35 / 1080) * 100vh, 35px);
     margin-bottom: 2.77vh;

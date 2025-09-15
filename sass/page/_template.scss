@@ -102,7 +102,7 @@ body {
 ////////////////////////////////////////////////////////////
 // 為了與首頁區隔，請在內頁加上innerpage ClassName
 .innerpage {
-  padding-top: calc((174 / 1080) * 100vh);
+  padding-top: calc((210 / 1080) * 100vh);
   > .container {
     @include gutter(); //gutter 代表左右要留白
     display: flex;

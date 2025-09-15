@@ -9007,7 +9007,7 @@ body.scroll-page .header {
 }
 
 .innerpage {
-  padding-top: 16.1111111111vh;
+  padding-top: 19.4444444444vh;
 }
 .innerpage > .container {
   position: relative;
@@ -9472,7 +9472,7 @@ h2.title {
   left: 0;
   top: 0;
   z-index: 99;
-  height: 13.88vh;
+  height: 170px;
   display: flex;
   align-items: center;
   padding-right: 100px;
@@ -9485,11 +9485,12 @@ h2.title {
 }
 .titleblock .titlename {
   flex: 1 1 auto;
-  font-size: clamp(60px, 6.4814814815vh, 70px);
+  font-size: clamp(58px, 5.8333333333vh, 63px);
   font-weight: 900;
   color: #814950;
   border-left: 4px solid #814950;
   padding-left: 3.488372093vw;
+  margin: 20px 0;
 }
 .titleblock .backlist {
   flex: 0 0 auto;
@@ -9539,6 +9540,98 @@ h2.title {
     margin: 0px auto;
     display: block;
     margin-bottom: 0.5em;
+  }
+}
+.cp .picslider_block2 {
+  width: 34.8837209302vw;
+  margin: 0px 3.48vw 5.55vh 0;
+  float: left;
+}
+.cp .picslider_block2 .picslider2 {
+  background: #f1f1f1;
+  overflow: visible;
+  padding: 0;
+}
+.cp .picslider_block2 .picslider2 .image {
+  position: relative;
+  overflow: hidden;
+}
+.cp .picslider_block2 .picslider2 .image:before {
+  display: inline-block;
+  content: "";
+  padding-top: 75%;
+}
+.cp .picslider_block2 .picslider2 .image img {
+  display: block;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  margin: auto;
+}
+.cp .picslider_block2 .picslider2 .image img {
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+.cp .picslider_block2 .picslider2 .slick-prev,
+.cp .picslider_block2 .picslider2 .slick-next {
+  width: clamp(60px, 4.65vw, 80px) !important;
+  height: clamp(60px, 4.65vw, 80px) !important;
+}
+.cp .picslider_block2 .picslider2 .slick-prev {
+  left: -20px;
+  background: url("../images/slick/icon_arrow_left_inverse.png") center center no-repeat rgba(255, 255, 255, 0.8);
+  background-size: 30px;
+}
+.cp .picslider_block2 .picslider2 .slick-prev:hover {
+  background: url("../images/slick/icon_arrow_left_inverse.png") center center no-repeat rgb(255, 255, 255);
+  background-size: 30px;
+}
+.cp .picslider_block2 .picslider2 .slick-next {
+  right: -20px;
+  background: url("../images/slick/icon_arrow_right_inverse.png") center center no-repeat rgba(255, 255, 255, 0.8);
+  background-size: 30px;
+}
+.cp .picslider_block2 .picslider2 .slick-next:hover {
+  background: url("../images/slick/icon_arrow_right_inverse.png") center center no-repeat rgb(255, 255, 255);
+  background-size: 30px;
+}
+.cp .picslider_block2 .picslider2 .slick-dots {
+  bottom: -7.4vh;
+}
+.cp .picslider_block2 .picslider2 .slick-dots li {
+  margin: 0 5px;
+}
+.cp .picslider_block2 .picslider2 .slick-dots li button {
+  font-size: clamp(12px, 1.2962962963vh, 14px);
+  color: #fff;
+  width: 24px;
+  height: 24px;
+}
+.cp .picslider_block2 .picslider2 .slick-dots li button:hover {
+  background: #972432;
+}
+.cp .picslider_block2 .picslider2 .slick-dots li.slick-active button {
+  background: #814950;
+}
+.cp .picslider_block2 .picslider2 .slick-dots li.slick-active button:hover {
+  background: #972432;
+}
+.cp table {
+  width: 50vw;
+  overflow: hidden;
+}
+@media (max-width: 1720px) {
+  .cp table {
+    width: 48.1vw;
+  }
+}
+@media (max-width: 1480px) {
+  .cp table {
+    width: 45.1vw;
   }
 }
 .cp .material_group {
@@ -9623,17 +9716,9 @@ h2.title {
 .cp .material_group .picslider_block .picslider .slick-dots li.slick-active button:hover {
   background: #972432;
 }
-.cp .material_group .material_Tb {
-  flex: 1 1 auto;
-}
-.cp .material_group .material_Tb table {
-  width: 100%;
-}
-.cp .material_group .material_Tb,
 .cp .material_group .material_content {
   flex: 1 1 auto;
 }
-.cp .material_group .material_Tb table,
 .cp .material_group .material_content table {
   width: 100%;
 }
