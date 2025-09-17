@@ -159,12 +159,12 @@ h2.title {
     width: 50vw;
     overflow: hidden;
 
-    @media (max-width: 1720px) {
+    @media (max-width: 1520px) {
       width: 48.1vw;
     }
-    @media (max-width: 1480px) {
-      width: 45.1vw;
-    }
+    // @media (max-width: 1480px) {
+    //   width: 45.1vw;
+    // }
   }
 
   //

@@ -3062,7 +3062,7 @@ div.tag ul li a:hover {
   }
 }
 .header > .container {
-  max-width: calc(100% - 200px);
+  max-width: calc(100% - 160px);
   overflow: visible;
   position: relative;
   display: flex;
@@ -9004,7 +9004,7 @@ body.scroll-page .innerpage {
 .container {
   padding: 0;
   margin: 0 auto;
-  max-width: calc(100% - 200px);
+  max-width: calc(100% - 160px);
   position: relative;
   min-height: 1px;
   padding-left: 0;
@@ -9214,7 +9214,7 @@ a.more:hover:after, a.more.active:after {
 }
 
 .ap {
-  padding-top: 6.4814814815vh;
+  padding-top: 4.6296296296vh;
 }
 
 .collection_listslider .listgroup {
@@ -9654,14 +9654,9 @@ h2.title {
   width: 50vw;
   overflow: hidden;
 }
-@media (max-width: 1720px) {
+@media (max-width: 1520px) {
   .cp table {
     width: 48.1vw;
-  }
-}
-@media (max-width: 1480px) {
-  .cp table {
-    width: 45.1vw;
   }
 }
 .cp .material_group {

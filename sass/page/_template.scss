@@ -90,7 +90,7 @@ body {
 .container {
   padding: 0;
   margin: 0 auto;
-  max-width: calc(100% - 200px); //請看_variable.scss
+  max-width: calc(100% - 160px); //請看_variable.scss
   @include gutter();
   // outline: 1px solid red;
 }
