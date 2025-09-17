@@ -9442,7 +9442,7 @@ a.more:hover:after, a.more.active:after {
   padding-right: 4.65vw;
 }
 .writersearch_block .left_content .title {
-  font-size: clamp(35px, 3.7037037037dvh, 40px);
+  font-size: 3.7037037037dvh;
   background-image: url("../images/writersearch_titlebg.png");
   background-repeat: no-repeat;
   background-position: left top;
@@ -9459,7 +9459,7 @@ a.more:hover:after, a.more.active:after {
   padding: 4.62dvh 2.9vw;
   background-color: #814950;
   border-radius: 20px;
-  font-size: clamp(22px, 2.5925925926dvh, 28px);
+  font-size: 2.5925925926dvh;
   background-image: url("../images/searchblockbg.jpg");
   background-repeat: no-repeat;
   background-position: left center;
@@ -9472,7 +9472,7 @@ a.more:hover:after, a.more.active:after {
   padding: 2.77dvh 2.08vw;
 }
 .writersearch_block .left_content .searchblock p {
-  font-size: clamp(22px, 2.5925925926dvh, 28px);
+  font-size: 2.5925925926dvh;
   line-height: 4.6296296296dvh;
   margin: 0 2.03vw 2.29dvh;
   padding: 0;
