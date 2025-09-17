@@ -321,11 +321,11 @@ a.more {
     }
     .represent {
       // font-size: clamp(21px, (23 / 1080) * 100vh, 23px);
-      font-size: calc((30 / 1080) * 100dvh);
+      font-size: calc((28 / 1080) * 100dvh);
       line-height: 1.2;
       color: $secondaryColor;
       border-top: 1px solid $secondaryColor;
-      padding-top: 1.2vh;
+      padding-top: 1.2dvh;
       // padding-bottom: 0.6vh;
       padding-left: 2.32vw;
       text-align: left;
@@ -333,8 +333,6 @@ a.more {
       background-repeat: no-repeat;
       background-position: 0 10px;
       background-size: 25px 29px;
-
-      outline: 1px solid red;
     }
   }
 }
