@@ -9442,7 +9442,7 @@ a.more:hover:after, a.more.active:after {
   padding-right: 4.65vw;
 }
 .writersearch_block .left_content .title {
-  font-size: clamp(35px, 3.7037037037vh, 40px);
+  font-size: clamp(35px, 3.7037037037dvh, 40px);
   background-image: url("../images/writersearch_titlebg.png");
   background-repeat: no-repeat;
   background-position: left top;
@@ -9451,7 +9451,7 @@ a.more:hover:after, a.more.active:after {
   font-weight: 800;
   color: #814950;
   position: relative;
-  padding: 3.7vh 2.34vw;
+  padding: 3.7dvh 2.34vw;
   display: inline-block;
 }
 .writersearch_block .left_content .searchblock {
@@ -9469,7 +9469,7 @@ a.more:hover:after, a.more.active:after {
   max-width: 100%;
 }
 .writersearch_block .left_content .searchblock .form_content input {
-  padding: 2.77vh 2.08vw;
+  padding: 2.77dvh 2.08vw;
 }
 .writersearch_block .left_content .searchblock p {
   font-size: clamp(22px, 2.5925925926dvh, 28px);

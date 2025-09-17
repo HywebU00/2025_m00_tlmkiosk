@@ -387,7 +387,7 @@ a.more {
     flex: 1 1 auto;
     padding-right: 4.65vw;
     .title {
-      font-size: clamp(35px, (40 / 1080) * 100vh, 40px);
+      font-size: clamp(35px, (40 / 1080) * 100dvh, 40px);
       background-image: url('../images/writersearch_titlebg.png');
       background-repeat: no-repeat;
       background-position: left top;
@@ -397,7 +397,7 @@ a.more {
       color: $primaryColor;
       position: relative;
 
-      padding: 3.7vh 2.34vw;
+      padding: 3.7dvh 2.34vw;
 
       display: inline-block;
     }
@@ -419,7 +419,7 @@ a.more {
         flex-basis: 100%;
         max-width: 100%;
         input {
-          padding: 2.77vh 2.08vw;
+          padding: 2.77dvh 2.08vw;
         }
       }
       p {
