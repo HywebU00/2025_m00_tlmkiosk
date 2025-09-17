@@ -87,11 +87,11 @@ a.more {
     p {
       color: $color-word;
       // font-size: (30 / 1720) * 100vw;
-      font-size: clamp(25px, (30 / 1080) * 100dvh, 30px);
+      font-size: clamp((25 / 1080) * 100dvh, (30 / 1080) * 100dvh, 30px);
       width: 41vw;
       padding: 0;
-      margin: 0 0 calc((50 / 1080) * 100vh) 0;
-      line-height: calc((50 / 1080) * 100vh);
+      margin: 0 0 calc((50 / 1080) * 100dvh) 0;
+      line-height: calc((50 / 1080) * 100dvh);
       // line-height: clamp(1.2em, 2vh, 1.6em);
       overflow: hidden;
       text-overflow: -o-ellipsis-lastline;
@@ -115,8 +115,8 @@ a.more {
           justify-content: center;
           align-items: center;
           color: #fff;
-          padding: 6.48dvh 3.125vw;
-
+          // padding: 6.48vh 3.125vw;
+          padding: clamp(20px, 5dvh, 70px) clamp(25px, 3vw, 60px);
           border-radius: 20px;
           font-weight: 700;
           text-align: center;

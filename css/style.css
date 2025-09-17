@@ -9146,11 +9146,11 @@ a.more:hover:after, a.more.active:after {
 }
 .welcome_block .welcome_content p {
   color: #333333;
-  font-size: clamp(25px, 2.7777777778dvh, 30px);
+  font-size: clamp(2.3148148148dvh, 2.7777777778dvh, 30px);
   width: 41vw;
   padding: 0;
-  margin: 0 0 4.6296296296vh 0;
-  line-height: 4.6296296296vh;
+  margin: 0 0 4.6296296296dvh 0;
+  line-height: 4.6296296296dvh;
   overflow: hidden;
   text-overflow: -o-ellipsis-lastline;
   text-overflow: ellipsis;
@@ -9174,7 +9174,7 @@ a.more:hover:after, a.more.active:after {
   justify-content: center;
   align-items: center;
   color: #fff;
-  padding: 6.48dvh 3.125vw;
+  padding: clamp(20px, 5dvh, 70px) clamp(25px, 3vw, 60px);
   border-radius: 20px;
   font-weight: 700;
   text-align: center;
