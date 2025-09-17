@@ -9342,7 +9342,7 @@ a.more:hover:after, a.more.active:after {
 .writer_listslider .listgroup .image:before {
   display: inline-block;
   content: "";
-  padding-top: 67.5%;
+  padding-top: 62.5%;
 }
 .writer_listslider .listgroup .image img {
   display: block;

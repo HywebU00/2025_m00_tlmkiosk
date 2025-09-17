@@ -293,7 +293,7 @@ a.more {
       position: relative;
       border-radius: 10px 10px 0 0;
       max-height: 27.7vh;
-      @include aspect-ratio(4, 2.7);
+      @include aspect-ratio(4, 2.5);
       img {
         object-fit: cover;
       }
