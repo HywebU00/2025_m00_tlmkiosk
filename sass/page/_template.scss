@@ -76,7 +76,10 @@ body {
       }
     }
     footer {
+      background-color: transparent;
+      padding: 2.7vh 0;
       p {
+        color: $secondaryColor;
         text-align: left;
       }
     }
