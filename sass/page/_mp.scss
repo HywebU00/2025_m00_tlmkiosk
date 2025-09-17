@@ -217,7 +217,8 @@ a.more {
       padding: 2.77vh 1.74vw 1.85vh;
     }
     .title {
-      font-size: clamp(30px, (34 / 1080) * 100vh, 34px);
+      // font-size: clamp((32 / 1080) * 100dvh, (34 / 1080) * 100dvh, 34px);
+      font-size: calc((34 / 1080) * 100dvh);
       font-weight: 500;
       color: $secondaryColor;
       line-height: calc((50 / 1080) * 100vh);

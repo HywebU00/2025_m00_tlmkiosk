@@ -9276,7 +9276,7 @@ a.more:hover:after, a.more.active:after {
   padding: 2.77vh 1.74vw 1.85vh;
 }
 .collection_listslider .listgroup .title {
-  font-size: clamp(30px, 3.1481481481vh, 34px);
+  font-size: 3.1481481481dvh;
   font-weight: 500;
   color: #595656;
   line-height: 4.6296296296vh;
