@@ -9377,8 +9377,8 @@ a.more:hover:after, a.more.active:after {
   display: -webkit-box;
   -webkit-line-clamp: 2;
   -webkit-box-orient: vertical;
-  height: 9.2592592593vh;
-  margin-bottom: 1.38vh;
+  height: 9.2592592593dvh;
+  margin-bottom: 1.38dvh;
   text-align: center;
 }
 .writer_listslider .listgroup .represent {
