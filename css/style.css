@@ -9219,7 +9219,7 @@ a.more:hover:after, a.more.active:after {
 }
 
 .ap {
-  padding-top: 5.5555555556vh;
+  padding-top: 4.6296296296vh;
 }
 
 .collection_listslider .listgroup {
@@ -9383,16 +9383,26 @@ a.more:hover:after, a.more.active:after {
 }
 .writer_listslider .listgroup .represent {
   font-size: 2.5925925926dvh;
-  line-height: 1.2;
+  line-height: 1.5;
   color: #595656;
   border-top: 1px solid #595656;
-  padding-top: 1.2dvh;
-  padding-left: 2.32vw;
+  padding-top: 10px;
+  padding-left: 35px;
   text-align: left;
+  min-height: 60px;
+  position: relative;
+}
+.writer_listslider .listgroup .represent:before {
+  content: "";
   background-image: url("../images/icon_rwork.png");
   background-repeat: no-repeat;
-  background-position: 0 10px;
+  background-position: 0 15px;
   background-size: 25px 29px;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 25px;
+  height: 100%;
 }
 
 .condition_content .title {
@@ -10186,7 +10196,7 @@ h2.title {
 }
 .chronology_slider .slick-prev {
   left: auto;
-  right: 90px;
+  right: 150px;
   background: url("../images/slick/icon_arrow_left_inverse.png") center center no-repeat rgba(255, 255, 255, 0.8);
   background-size: 30px;
 }
@@ -10195,7 +10205,7 @@ h2.title {
   background-size: 30px;
 }
 .chronology_slider .slick-next {
-  right: -20px;
+  right: 40px;
   background: url("../images/slick/icon_arrow_right_inverse.png") center center no-repeat rgba(255, 255, 255, 0.8);
   background-size: 30px;
 }
@@ -10249,7 +10259,7 @@ h2.title {
 }
 .work_slider .slick-prev {
   left: auto;
-  right: 90px;
+  right: 150px;
   background: url("../images/slick/icon_arrow_left_inverse.png") center center no-repeat rgba(255, 255, 255, 0.8);
   background-size: 30px;
 }
@@ -10258,7 +10268,7 @@ h2.title {
   background-size: 30px;
 }
 .work_slider .slick-next {
-  right: -20px;
+  right: 40px;
   background: url("../images/slick/icon_arrow_right_inverse.png") center center no-repeat rgba(255, 255, 255, 0.8);
   background-size: 30px;
 }
