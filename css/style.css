@@ -3053,7 +3053,7 @@ div.tag ul li a:hover {
   right: 0;
   z-index: 99;
   transition: 0.3s ease-out;
-  padding-top: 6.4814814815vh;
+  padding-top: 5.5555555556vh;
 }
 @media screen and (max-width: 767px) {
   .header {
@@ -8942,7 +8942,7 @@ body.fullscreen-page footer {
   left: 0;
 }
 body.fullscreen-page .innerpage {
-  padding-top: clamp(130px, 12.962962963vh, 140px);
+  padding-top: clamp(120px, 12.037037037vh, 130px);
 }
 body.scroll-page {
   width: 100vw;
@@ -9015,7 +9015,7 @@ body.scroll-page .innerpage {
 .main {
   position: relative;
   margin: 0 auto;
-  padding-top: 12.6851851852vh;
+  padding-top: 11.1111111111vh;
 }
 .main h2 {
   line-height: 1.25em;

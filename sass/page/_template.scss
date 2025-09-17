@@ -24,7 +24,7 @@ body {
       left: 0;
     }
     .innerpage {
-      padding-top: clamp(130px, (140 / 1080) * 100vh, 140px);
+      padding-top: clamp(120px, (130 / 1080) * 100vh, 130px);
     }
   }
   &.scroll-page {
@@ -98,7 +98,7 @@ body {
 .main {
   position: relative;
   margin: 0 auto;
-  padding-top: calc((137 / 1080) * 100vh);
+  padding-top: calc((120 / 1080) * 100vh);
 
   // 可先設定一個中央區塊最大寬，限制accesskey對齊
   h2 {
