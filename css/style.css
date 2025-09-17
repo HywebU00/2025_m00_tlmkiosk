@@ -8993,12 +8993,7 @@ body.scroll-page .innerpage {
   width: 16.0465116279vw;
   height: 6.8518518519vh;
 }
-.wrapper.mpwrapper footer {
-  background-color: transparent;
-  padding: 2.7vh 0;
-}
 .wrapper.mpwrapper footer p {
-  color: #595656;
   text-align: left;
 }
 
@@ -9174,7 +9169,7 @@ a.more:hover:after, a.more.active:after {
   justify-content: center;
   align-items: center;
   color: #fff;
-  padding: clamp(20px, 5vh, 70px) clamp(25px, 3vw, 60px);
+  padding: clamp(20px, 5dvh, 70px) clamp(25px, 3vw, 60px);
   border-radius: 20px;
   font-weight: 700;
   text-align: center;
