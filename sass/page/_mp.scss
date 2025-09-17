@@ -432,6 +432,15 @@ a.more {
         padding: 0;
         color: #fff;
       }
+      .btn_grp {
+        .btn {
+          background: #fff;
+          border: 1px solid #fff;
+          color: $primaryColor;
+          border-radius: 50px;
+          padding: 1.11vh 2vw;
+        }
+      }
     }
   }
   .right_content {
