@@ -157,7 +157,7 @@ a.more {
   }
 }
 .ap {
-  padding-top: calc((50 / 1080) * 100vh);
+  padding-top: calc((60 / 1080) * 100vh);
   // outline: 1px solid red;
 }
 // 典藏listslider
@@ -207,13 +207,13 @@ a.more {
       position: relative;
       border-radius: 10px 10px 0 0;
       max-height: 27.7vh;
-      @include aspect-ratio(4, 3);
+      @include aspect-ratio(4, 2.7);
       img {
         object-fit: cover;
       }
     }
     .content {
-      padding: 3.24vh 1.74vw 2.22vh;
+      padding: 2.77vh 1.74vw 1.85vh;
     }
     .title {
       font-size: clamp(30px, (34 / 1080) * 100vh, 34px);
@@ -291,14 +291,14 @@ a.more {
     .image {
       position: relative;
       border-radius: 10px 10px 0 0;
-      height: 27.7vh;
-      @include aspect-ratio(4, 3);
+      max-height: 27.7vh;
+      @include aspect-ratio(4, 2.7);
       img {
         object-fit: cover;
       }
     }
     .content {
-      padding: 3.24vh 1.74vw 1.85vh;
+      padding: 2.77vh 1.74vw 1.85vh;
     }
     .title {
       font-size: clamp(30px, (34 / 1080) * 100vh, 34px);

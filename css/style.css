@@ -9215,7 +9215,7 @@ a.more:hover:after, a.more.active:after {
 }
 
 .ap {
-  padding-top: 4.6296296296vh;
+  padding-top: 5.5555555556vh;
 }
 
 .collection_listslider .listgroup {
@@ -9255,7 +9255,7 @@ a.more:hover:after, a.more.active:after {
 .collection_listslider .listgroup .image:before {
   display: inline-block;
   content: "";
-  padding-top: 75%;
+  padding-top: 67.5%;
 }
 .collection_listslider .listgroup .image img {
   display: block;
@@ -9273,7 +9273,7 @@ a.more:hover:after, a.more.active:after {
      object-fit: cover;
 }
 .collection_listslider .listgroup .content {
-  padding: 3.24vh 1.74vw 2.22vh;
+  padding: 2.77vh 1.74vw 1.85vh;
 }
 .collection_listslider .listgroup .title {
   font-size: clamp(30px, 3.1481481481vh, 34px);
@@ -9336,13 +9336,13 @@ a.more:hover:after, a.more.active:after {
 .writer_listslider .listgroup .image {
   position: relative;
   border-radius: 10px 10px 0 0;
-  height: 27.7vh;
+  max-height: 27.7vh;
   overflow: hidden;
 }
 .writer_listslider .listgroup .image:before {
   display: inline-block;
   content: "";
-  padding-top: 75%;
+  padding-top: 67.5%;
 }
 .writer_listslider .listgroup .image img {
   display: block;
@@ -9360,7 +9360,7 @@ a.more:hover:after, a.more.active:after {
      object-fit: cover;
 }
 .writer_listslider .listgroup .content {
-  padding: 3.24vh 1.74vw 1.85vh;
+  padding: 2.77vh 1.74vw 1.85vh;
 }
 .writer_listslider .listgroup .title {
   font-size: clamp(30px, 3.1481481481vh, 34px);
