@@ -24,7 +24,8 @@ h2.title {
   }
   .titlename {
     flex: 1 1 auto;
-    font-size: clamp(54px, (63 / 1080) * 100vh, 63px);
+    // font-size: clamp(54px, (63 / 1080) * 100vh, 63px);
+    font-size: calc((63 / 1080) * 100dvh);
     font-weight: 900;
     color: $primaryColor;
     border-left: 4px solid $primaryColor;

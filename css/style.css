@@ -9517,7 +9517,7 @@ h2.title {
 }
 .titleblock .titlename {
   flex: 1 1 auto;
-  font-size: clamp(54px, 5.8333333333vh, 63px);
+  font-size: 5.8333333333dvh;
   font-weight: 900;
   color: #814950;
   border-left: 4px solid #814950;
