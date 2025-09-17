@@ -2954,6 +2954,7 @@ em[tooltip]:hover {
   font-size: clamp(24px, 2.7777777778vh, 30px);
   background-color: rgba(255, 255, 255, 0.4);
   transition: 0.5s;
+  white-space: nowrap;
 }
 .category a em {
   font-style: normal;
