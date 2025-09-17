@@ -87,7 +87,7 @@ a.more {
     p {
       color: $color-word;
       // font-size: (30 / 1720) * 100vw;
-      font-size: clamp((25 / 1080) * 100dvh, (30 / 1080) * 100dvh, 30px);
+      font-size: clamp((28 / 1080) * 100dvh, (30 / 1080) * 100dvh, 30px);
       width: 41vw;
       padding: 0;
       margin: 0 0 calc((50 / 1080) * 100dvh) 0;

@@ -9146,7 +9146,7 @@ a.more:hover:after, a.more.active:after {
 }
 .welcome_block .welcome_content p {
   color: #333333;
-  font-size: clamp(2.3148148148dvh, 2.7777777778dvh, 30px);
+  font-size: clamp(2.5925925926dvh, 2.7777777778dvh, 30px);
   width: 41vw;
   padding: 0;
   margin: 0 0 4.6296296296dvh 0;
