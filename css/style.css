@@ -2951,7 +2951,7 @@ em[tooltip]:hover {
   color: #595656;
   box-sizing: border-box;
   border-radius: 50px;
-  font-size: clamp(24px, 2.7777777778vh, 30px);
+  font-size: 2.7777777778dvh;
   background-color: rgba(255, 255, 255, 0.4);
   transition: 0.5s;
   white-space: nowrap;
@@ -9273,13 +9273,13 @@ a.more:hover:after, a.more.active:after {
      object-fit: cover;
 }
 .collection_listslider .listgroup .content {
-  padding: 2.77vh 1.74vw 1.85vh;
+  padding: 2.77dvh 1.74vw 1.85dvh;
 }
 .collection_listslider .listgroup .title {
-  font-size: 3.1481481481dvh;
+  font-size: 3.3333333333dvh;
   font-weight: 500;
   color: #595656;
-  line-height: 4.6296296296vh;
+  line-height: 4.6296296296dvh;
   overflow: hidden;
   text-overflow: -o-ellipsis-lastline;
   text-overflow: ellipsis;
@@ -9360,13 +9360,13 @@ a.more:hover:after, a.more.active:after {
      object-fit: cover;
 }
 .writer_listslider .listgroup .content {
-  padding: 2.77vh 1.74vw 1.85vh;
+  padding: 2.77dvh 1.74vw 1.85dvh;
 }
 .writer_listslider .listgroup .title {
-  font-size: clamp(30px, 3.1481481481vh, 34px);
+  font-size: 3.3333333333dvh;
   font-weight: 500;
   color: #814950;
-  line-height: 4.6296296296vh;
+  line-height: 4.6296296296dvh;
   overflow: hidden;
   text-overflow: -o-ellipsis-lastline;
   text-overflow: ellipsis;
@@ -9379,16 +9379,16 @@ a.more:hover:after, a.more.active:after {
 }
 .writer_listslider .listgroup .represent {
   font-size: clamp(21px, 2.1296296296vh, 23px);
-  line-height: 3.1481481481vh;
+  line-height: 3.1481481481dvh;
   color: #595656;
   border-top: 1px solid #595656;
   padding-top: 1.2vh;
-  padding-bottom: 0.46vh;
+  padding-bottom: 0.6vh;
   padding-left: 2.32vw;
   text-align: left;
   background-image: url("../images/icon_rwork.png");
   background-repeat: no-repeat;
-  background-position: 0 15px;
+  background-position: 0 10px;
   background-size: 25px 29px;
 }
 

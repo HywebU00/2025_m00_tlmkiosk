@@ -20,7 +20,8 @@
     color: $secondaryColor;
     box-sizing: border-box;
     border-radius: 50px;
-    font-size: clamp(24px, (30/ 1080) * 100vh, 30px);
+    // font-size: clamp(24px, (30/ 1080) * 100vh, 30px);
+    font-size: calc((30 / 1080) * 100dvh);
     background-color: rgb(255, 255, 255, 0.4);
     transition: 0.5s;
     white-space: nowrap;

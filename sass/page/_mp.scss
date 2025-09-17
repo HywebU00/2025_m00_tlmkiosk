@@ -214,14 +214,14 @@ a.more {
       }
     }
     .content {
-      padding: 2.77vh 1.74vw 1.85vh;
+      padding: 2.77dvh 1.74vw 1.85dvh;
     }
     .title {
-      // font-size: clamp((32 / 1080) * 100dvh, (34 / 1080) * 100dvh, 34px);
-      font-size: calc((34 / 1080) * 100dvh);
+      // font-size: clamp((36 / 1080) * 100dvh, (34 / 1080) * 100dvh, 34px);
+      font-size: calc((36 / 1080) * 100dvh);
       font-weight: 500;
       color: $secondaryColor;
-      line-height: calc((50 / 1080) * 100vh);
+      line-height: calc((50 / 1080) * 100dvh);
       // line-height: clamp(1.2em, 2vh, 1.6em);
       overflow: hidden;
       text-overflow: -o-ellipsis-lastline;
@@ -300,13 +300,14 @@ a.more {
       }
     }
     .content {
-      padding: 2.77vh 1.74vw 1.85vh;
+      padding: 2.77dvh 1.74vw 1.85dvh;
     }
     .title {
-      font-size: clamp(30px, (34 / 1080) * 100vh, 34px);
+      // font-size: clamp(30px, (34 / 1080) * 100vh, 34px);
+      font-size: calc((36 / 1080) * 100dvh);
       font-weight: 500;
       color: $primaryColor;
-      line-height: calc((50 / 1080) * 100vh);
+      line-height: calc((50 / 1080) * 100dvh);
       // line-height: clamp(1.2em, 2vh, 1.6em);
       overflow: hidden;
       text-overflow: -o-ellipsis-lastline;
@@ -320,16 +321,17 @@ a.more {
     }
     .represent {
       font-size: clamp(21px, (23 / 1080) * 100vh, 23px);
-      line-height: calc((34 / 1080) * 100vh);
+      // font-size: calc((23 / 1080) * 100dvh);
+      line-height: calc((34 / 1080) * 100dvh);
       color: $secondaryColor;
       border-top: 1px solid $secondaryColor;
       padding-top: 1.2vh;
-      padding-bottom: 0.46vh;
+      padding-bottom: 0.6vh;
       padding-left: 2.32vw;
       text-align: left;
       background-image: url('../images/icon_rwork.png');
       background-repeat: no-repeat;
-      background-position: 0 15px;
+      background-position: 0 10px;
       background-size: 25px 29px;
     }
   }
