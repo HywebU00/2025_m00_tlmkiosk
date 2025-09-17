@@ -2,7 +2,8 @@
 table {
   width: 100%;
   border-collapse: collapse;
-  font-size: clamp(22px, (24 / 1080) * 100vh, 24px);
+  // font-size: clamp(22px, (24 / 1080) * 100vh, 24px);
+  font-size: calc((24 / 1080) * 100dvh);
   line-height: calc((50 / 1080) * 100vh);
   @include screen('xs_mobile') {
     width: 100%;

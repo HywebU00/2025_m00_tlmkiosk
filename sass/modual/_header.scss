@@ -74,7 +74,8 @@
   .prev_page {
     flex: 0 0 auto;
     padding: 2.3vh 1.7vw 2.3vh 4.3vw;
-    font-size: clamp(26px, (32 / 1080) * 100vh, 32px);
+    // font-size: clamp(26px, (32 / 1080) * 100vh, 32px);
+    font-size: calc((32 / 1080) * 100vh);
     margin: 0 0 0 0.87vw;
     width: auto;
     color: $primaryColor;

@@ -1275,7 +1275,7 @@ th {
   margin-bottom: 1em;
 }
 .cp p {
-  font-size: clamp(22px, 2.2222222222vh, 24px);
+  font-size: 2.2222222222dvh;
   line-height: 4.6296296296vh;
   margin-top: 0;
   margin-bottom: 3.7037037037vh;
@@ -3097,7 +3097,7 @@ div.tag ul li a:hover {
 .header .prev_page {
   flex: 0 0 auto;
   padding: 2.3vh 1.7vw 2.3vh 4.3vw;
-  font-size: clamp(26px, 2.962962963vh, 32px);
+  font-size: 2.962962963vh;
   margin: 0 0 0 0.87vw;
   width: auto;
   color: #814950;
@@ -6670,7 +6670,7 @@ abbr[title] {
 table {
   width: 100%;
   border-collapse: collapse;
-  font-size: clamp(22px, 2.2222222222vh, 24px);
+  font-size: 2.2222222222dvh;
   line-height: 4.6296296296vh;
 }
 @media screen and (max-width: 575px) {
