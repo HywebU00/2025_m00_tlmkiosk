@@ -115,7 +115,7 @@ a.more {
           justify-content: center;
           align-items: center;
           color: #fff;
-          padding: 7.4vh 3.125vw;
+          padding: 6.48vh 3.125vw;
           border-radius: 20px;
           font-weight: 700;
           text-align: center;
@@ -132,7 +132,7 @@ a.more {
             }
           }
           span {
-            font-size: clamp(30px, (40 / 1080) * 100vh, 40px);
+            font-size: clamp(28px, (40 / 1080) * 100vh, 40px);
             line-height: calc((54 / 1080) * 100vh);
           }
           &:hover {
@@ -383,35 +383,52 @@ a.more {
     flex: 1 1 auto;
     padding-right: 4.65vw;
     .title {
-      font-size: clamp(32px, (35 / 1080) * 100vh, 35px);
+      font-size: clamp(35px, (40 / 1080) * 100vh, 40px);
+      background-image: url('../images/writersearch_titlebg.png');
+      background-repeat: no-repeat;
+      background-position: left top;
+      background-size: contain;
       margin-bottom: 2.3vh;
       font-weight: 800;
       color: $primaryColor;
       position: relative;
-      background-color: $lightColor;
-      padding: 1.38vh 1.74vw;
-      border-radius: 50px;
+
+      padding: 3.7vh 2.34vw;
+
       display: inline-block;
     }
-    .searchcontent {
-      font-size: clamp(22px, (28 / 1080) * 100vh, 28px);
-      line-height: calc((50 / 1080) * 100vh);
-      margin: 0 2.03vw 50px;
-    }
+    // .searchcontent {
+    //   font-size: clamp(22px, (28 / 1080) * 100vh, 28px);
+    //   line-height: calc((50 / 1080) * 100vh);
+    //   margin: 0 2.03vw 50px;
+    // }
     .searchblock {
       margin: 0 2.03vw;
-      padding: 4.63vh 2.9vw;
+      padding: 4.62vh 2.9vw;
       background-color: $primaryColor;
       border-radius: 20px;
       font-size: clamp(22px, (28 / 1080) * 100vh, 28px);
+      background-image: url('../images/searchblockbg.jpg');
+      background-repeat: no-repeat;
+      background-position: left center;
       .form_content {
         flex-basis: 100%;
         max-width: 100%;
+        input {
+          padding: 2.77vh 2.08vw;
+        }
+      }
+      p {
+        font-size: clamp(22px, (28 / 1080) * 100vh, 28px);
+        line-height: calc((50 / 1080) * 100vh);
+        margin: 0 2.03vw 2.29vh;
+        padding: 0;
+        color: #fff;
       }
     }
   }
   .right_content {
     flex: 0 0 auto;
-    flex-basis: 30%;
+    flex-basis: 40%;
   }
 }

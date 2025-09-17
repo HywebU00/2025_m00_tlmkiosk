@@ -7,10 +7,9 @@
   right: 0;
   z-index: 99;
   transition: 0.3s ease-out;
-  // padding-top: 64px;
-  padding-top: calc((80 / 1080) * 100vh);
+  padding-top: calc((70 / 1080) * 100vh);
   @extend %clearfix;
-
+  // outline: 1px solid red;
   @include screen('mobile') {
     position: fixed;
     width: 100%;

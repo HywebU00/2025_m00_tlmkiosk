@@ -24,12 +24,13 @@ h2.title {
   }
   .titlename {
     flex: 1 1 auto;
-    font-size: clamp(58px, (63 / 1080) * 100vh, 63px);
+    font-size: clamp(54px, (63 / 1080) * 100vh, 63px);
     font-weight: 900;
     color: $primaryColor;
     border-left: 4px solid $primaryColor;
     padding-left: calc((60 / 1720) * 100vw);
     margin: 20px 0;
+    @include text-line(2, 1.2);
   }
   .backlist {
     flex: 0 0 auto;

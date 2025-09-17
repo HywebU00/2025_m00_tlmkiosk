@@ -16,11 +16,15 @@ body {
     width: 100vw;
     height: 100vh;
     overflow: hidden; /* 禁止滾動 */
+
     footer {
       position: absolute;
       bottom: 0;
       right: 0;
       left: 0;
+    }
+    .innerpage {
+      padding-top: clamp(130px, (140 / 1080) * 100vh, 140px);
     }
   }
   &.scroll-page {
@@ -30,6 +34,9 @@ body {
 
     .header {
       display: none;
+    }
+    .innerpage {
+      padding-top: 180px;
     }
   }
 }
@@ -102,7 +109,6 @@ body {
 ////////////////////////////////////////////////////////////
 // 為了與首頁區隔，請在內頁加上innerpage ClassName
 .innerpage {
-  padding-top: calc((210 / 1080) * 100vh);
   > .container {
     @include gutter(); //gutter 代表左右要留白
     display: flex;
