@@ -9149,7 +9149,7 @@ a.more:hover:after, a.more.active:after {
   font-size: clamp(2.5925925926dvh, 2.7777777778dvh, 30px);
   width: 41vw;
   padding: 0;
-  margin: 0 0 4.6296296296dvh 0;
+  margin: 0 0 3.7037037037dvh 0;
   line-height: 4.6296296296dvh;
   overflow: hidden;
   text-overflow: -o-ellipsis-lastline;
@@ -9192,8 +9192,8 @@ a.more:hover:after, a.more.active:after {
   display: block;
 }
 .welcome_block .welcome_content .unitOptions > div a span {
-  font-size: clamp(28px, 3.7037037037vh, 40px);
-  line-height: 5vh;
+  font-size: clamp(28px, 3.7037037037dvh, 40px);
+  line-height: 5dvh;
 }
 .welcome_block .welcome_content .unitOptions > div a:hover {
   background-color: #972432;
