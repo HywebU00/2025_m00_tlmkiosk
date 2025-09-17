@@ -9378,8 +9378,8 @@ a.more:hover:after, a.more.active:after {
   text-align: center;
 }
 .writer_listslider .listgroup .represent {
-  font-size: 2.1296296296dvh;
-  line-height: 3.1481481481dvh;
+  font-size: 2.3148148148dvh;
+  line-height: 3.2407407407dvh;
   color: #595656;
   border-top: 1px solid #595656;
   padding-top: 1.2vh;
@@ -9456,10 +9456,10 @@ a.more:hover:after, a.more.active:after {
 }
 .writersearch_block .left_content .searchblock {
   margin: 0 2.03vw;
-  padding: 4.62vh 2.9vw;
+  padding: 4.62dvh 2.9vw;
   background-color: #814950;
   border-radius: 20px;
-  font-size: clamp(22px, 2.5925925926vh, 28px);
+  font-size: clamp(22px, 2.5925925926dvh, 28px);
   background-image: url("../images/searchblockbg.jpg");
   background-repeat: no-repeat;
   background-position: left center;
@@ -9472,9 +9472,9 @@ a.more:hover:after, a.more.active:after {
   padding: 2.77vh 2.08vw;
 }
 .writersearch_block .left_content .searchblock p {
-  font-size: clamp(22px, 2.5925925926vh, 28px);
-  line-height: 4.6296296296vh;
-  margin: 0 2.03vw 2.29vh;
+  font-size: clamp(22px, 2.5925925926dvh, 28px);
+  line-height: 4.6296296296dvh;
+  margin: 0 2.03vw 2.29dvh;
   padding: 0;
   color: #fff;
 }

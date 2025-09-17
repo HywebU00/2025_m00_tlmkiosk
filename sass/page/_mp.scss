@@ -321,8 +321,8 @@ a.more {
     }
     .represent {
       // font-size: clamp(21px, (23 / 1080) * 100vh, 23px);
-      font-size: calc((23 / 1080) * 100dvh);
-      line-height: calc((34 / 1080) * 100dvh);
+      font-size: calc((25 / 1080) * 100dvh);
+      line-height: calc((35 / 1080) * 100dvh);
       color: $secondaryColor;
       border-top: 1px solid $secondaryColor;
       padding-top: 1.2vh;
@@ -408,10 +408,10 @@ a.more {
     // }
     .searchblock {
       margin: 0 2.03vw;
-      padding: 4.62vh 2.9vw;
+      padding: 4.62dvh 2.9vw;
       background-color: $primaryColor;
       border-radius: 20px;
-      font-size: clamp(22px, (28 / 1080) * 100vh, 28px);
+      font-size: clamp(22px, (28 / 1080) * 100dvh, 28px);
       background-image: url('../images/searchblockbg.jpg');
       background-repeat: no-repeat;
       background-position: left center;
@@ -423,9 +423,9 @@ a.more {
         }
       }
       p {
-        font-size: clamp(22px, (28 / 1080) * 100vh, 28px);
-        line-height: calc((50 / 1080) * 100vh);
-        margin: 0 2.03vw 2.29vh;
+        font-size: clamp(22px, (28 / 1080) * 100dvh, 28px);
+        line-height: calc((50 / 1080) * 100dvh);
+        margin: 0 2.03vw 2.29dvh;
         padding: 0;
         color: #fff;
       }
