@@ -2951,7 +2951,7 @@ em[tooltip]:hover {
   color: #595656;
   box-sizing: border-box;
   border-radius: 50px;
-  font-size: clamp(25px, 2.962962963vh, 32px);
+  font-size: clamp(24px, 2.7777777778vh, 30px);
   background-color: rgba(255, 255, 255, 0.4);
   transition: 0.5s;
 }
@@ -9248,7 +9248,7 @@ a.more:hover:after, a.more.active:after {
 .collection_listslider .listgroup .image {
   position: relative;
   border-radius: 10px 10px 0 0;
-  height: 27.7vh;
+  max-height: 27.7vh;
   overflow: hidden;
 }
 .collection_listslider .listgroup .image:before {

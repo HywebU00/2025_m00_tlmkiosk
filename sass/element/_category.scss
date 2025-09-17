@@ -20,7 +20,7 @@
     color: $secondaryColor;
     box-sizing: border-box;
     border-radius: 50px;
-    font-size: clamp(25px, (32 / 1080) * 100vh, 32px);
+    font-size: clamp(24px, (30/ 1080) * 100vh, 30px);
     background-color: rgb(255, 255, 255, 0.4);
     transition: 0.5s;
     em {
