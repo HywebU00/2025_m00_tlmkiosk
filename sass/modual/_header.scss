@@ -84,13 +84,16 @@
     box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
     background-image: url('../images/icon_home.png');
     background-repeat: no-repeat;
-    background-position: 1.7vw center;
+    background-position: left 1.7vw center;
     &:hover {
       box-shadow: 0 0 6px rgba(0, 0, 0, 0.5);
     }
   }
   .prev_page {
     background-image: url('../images/icon_prev_page.png');
+  }
+  .backhome {
+    background-position: left 1.7vw top 1.85dvh;
   }
   // 導覽列
   .navigation {

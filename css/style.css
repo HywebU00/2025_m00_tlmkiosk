@@ -3107,7 +3107,7 @@ div.tag ul li a:hover {
   box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
   background-image: url("../images/icon_home.png");
   background-repeat: no-repeat;
-  background-position: 1.7vw center;
+  background-position: left 1.7vw center;
 }
 .header .backhome:hover,
 .header .prev_page:hover {
@@ -3115,6 +3115,9 @@ div.tag ul li a:hover {
 }
 .header .prev_page {
   background-image: url("../images/icon_prev_page.png");
+}
+.header .backhome {
+  background-position: left 1.7vw top 1.85dvh;
 }
 .header .navigation {
   box-sizing: border-box;
@@ -9378,18 +9381,18 @@ a.more:hover:after, a.more.active:after {
   text-align: center;
 }
 .writer_listslider .listgroup .represent {
-  font-size: 2.3148148148dvh;
-  line-height: 3.2407407407dvh;
+  font-size: 2.7777777778dvh;
+  line-height: 1.2;
   color: #595656;
   border-top: 1px solid #595656;
   padding-top: 1.2vh;
-  padding-bottom: 0.6vh;
   padding-left: 2.32vw;
   text-align: left;
   background-image: url("../images/icon_rwork.png");
   background-repeat: no-repeat;
   background-position: 0 10px;
   background-size: 25px 29px;
+  outline: 1px solid red;
 }
 
 .condition_content .title {
