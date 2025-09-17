@@ -36,7 +36,8 @@ h2.title {
   .backlist {
     flex: 0 0 auto;
     padding: 2.3vh 1.7vw 2.3vh 4.3vw;
-    font-size: clamp(26px, (32 / 1080) * 100vh, 32px);
+    // font-size: clamp(26px, (32 / 1080) * 100vh, 32px);
+    font-size: calc((32 / 1080) * 100vh);
     margin: 0 0 0 0.87vw;
     width: auto;
     color: $primaryColor;
@@ -47,6 +48,7 @@ h2.title {
     background-image: url('../images/icon_backlist.png');
     background-repeat: no-repeat;
     background-position: 1.7vw center;
+    background-size: 3.2vh 3.05vh;
     &:hover {
       box-shadow: 0 0 6px rgba(0, 0, 0, 0.5);
     }

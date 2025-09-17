@@ -2955,6 +2955,7 @@ em[tooltip]:hover {
   background-color: rgba(255, 255, 255, 0.4);
   transition: 0.5s;
   white-space: nowrap;
+  font-weight: bold;
 }
 .category a em {
   font-style: normal;
@@ -9535,7 +9536,7 @@ h2.title {
 .titleblock .backlist {
   flex: 0 0 auto;
   padding: 2.3vh 1.7vw 2.3vh 4.3vw;
-  font-size: clamp(26px, 2.962962963vh, 32px);
+  font-size: 2.962962963vh;
   margin: 0 0 0 0.87vw;
   width: auto;
   color: #814950;
@@ -9546,6 +9547,7 @@ h2.title {
   background-image: url("../images/icon_backlist.png");
   background-repeat: no-repeat;
   background-position: 1.7vw center;
+  background-size: 3.2vh 3.05vh;
 }
 .titleblock .backlist:hover {
   box-shadow: 0 0 6px rgba(0, 0, 0, 0.5);
