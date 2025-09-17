@@ -31,16 +31,16 @@
     margin-bottom: 1em;
   }
   p {
-    // font-size: clamp(22px, (24 / 1080) * 100vh, 24px);
-    font-size: calc((24 / 1080) * 100dvh);
-    line-height: calc((50 / 1080) * 100vh);
+    font-size: clamp(22px, (24 / 1080) * 100vh, 24px);
+    // font-size: calc((24 / 1080) * 100dvh);
+    line-height: 2;
     margin-top: 0;
     margin-bottom: calc((40 / 1080) * 100vh);
   }
   ul,
   ol {
     font-size: clamp(22px, (24 / 1080) * 100vh, 24px);
-    line-height: calc((50 / 1080) * 100vh);
+    line-height: 2;
     margin-top: 0;
     margin-bottom: calc((40 / 1080) * 100vh);
     li {
