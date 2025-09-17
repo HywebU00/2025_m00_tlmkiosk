@@ -12,7 +12,7 @@ h2.title {
   left: 0;
   top: 0;
   z-index: 99;
-  height: 170px;
+  height: 180px;
   display: flex;
   align-items: center;
   padding-right: 100px;
@@ -30,7 +30,7 @@ h2.title {
     color: $primaryColor;
     border-left: 4px solid $primaryColor;
     padding-left: calc((60 / 1720) * 100vw);
-    margin: 20px 0;
+    margin: calc((20 / 1080) * 100dvh) 0;
     @include text-line(2, 1.2);
   }
   .backlist {

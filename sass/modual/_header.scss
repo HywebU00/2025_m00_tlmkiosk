@@ -86,6 +86,9 @@
     background-image: url('../images/icon_home.png');
     background-repeat: no-repeat;
     background-position: left 1.7vw center;
+    background-size: 3.2vh 3.05vh;
+    display: flex;
+    align-items: center;
     &:hover {
       box-shadow: 0 0 6px rgba(0, 0, 0, 0.5);
     }
@@ -93,9 +96,7 @@
   .prev_page {
     background-image: url('../images/icon_prev_page.png');
   }
-  .backhome {
-    background-position: left 1.7vw top 1.85dvh;
-  }
+
   // 導覽列
   .navigation {
     @include screen('mobile') {

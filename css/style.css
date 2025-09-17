@@ -3108,6 +3108,9 @@ div.tag ul li a:hover {
   background-image: url("../images/icon_home.png");
   background-repeat: no-repeat;
   background-position: left 1.7vw center;
+  background-size: 3.2vh 3.05vh;
+  display: flex;
+  align-items: center;
 }
 .header .backhome:hover,
 .header .prev_page:hover {
@@ -3115,9 +3118,6 @@ div.tag ul li a:hover {
 }
 .header .prev_page {
   background-image: url("../images/icon_prev_page.png");
-}
-.header .backhome {
-  background-position: left 1.7vw top 1.85dvh;
 }
 .header .navigation {
   box-sizing: border-box;
@@ -9504,7 +9504,7 @@ h2.title {
   left: 0;
   top: 0;
   z-index: 99;
-  height: 170px;
+  height: 180px;
   display: flex;
   align-items: center;
   padding-right: 100px;
@@ -9522,7 +9522,7 @@ h2.title {
   color: #814950;
   border-left: 4px solid #814950;
   padding-left: 3.488372093vw;
-  margin: 20px 0;
+  margin: 1.8518518519dvh 0;
   overflow: hidden;
   text-overflow: -o-ellipsis-lastline;
   text-overflow: ellipsis;
